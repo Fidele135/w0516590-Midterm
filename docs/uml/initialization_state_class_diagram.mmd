@@ -1,27 +1,26 @@
 classDiagram
 
 class GameController{
-    +startGame()
+    startGame()
 }
 
 class Maze{
-    +loadMaze()
+    loadMaze()
 }
 
-class LightBeam{
-    +move()
-    +reflect()
+class Light{
+    move()
 }
 
 class Mirror{
-    +changeDirection()
+    reflect()
 }
 
 class Goal{
-    +checkGoal()
+    checkGoal()
 }
 
 GameController --> Maze
-GameController --> LightBeam
+GameController --> Light
 Maze --> Mirror
 Maze --> Goal

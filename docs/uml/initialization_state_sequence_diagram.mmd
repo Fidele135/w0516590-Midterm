@@ -1,7 +1,6 @@
 sequenceDiagram
 
 GameController->>Maze: loadMaze()
-GameController->>LightBeam: createLight()
-Maze->>Mirror: placeMirrors()
+GameController->>Light: createLight()
+Maze->>Mirror: setupMirror()
 Maze->>Goal: placeGoal()
-LightBeam->>Goal: checkGoal()
