@@ -4,26 +4,24 @@ class GameController{
     +startGame()
 }
 
-class Player{
-    +move()
-    +update()
-}
-
-class Enemy{
-    +spawn()
-    +update()
-}
-
 class Maze{
     +loadMaze()
 }
 
-class ScoreManager{
-    +score
-    +updateScore()
+class LightBeam{
+    +move()
+    +reflect()
 }
 
-GameController --> Player
-GameController --> Enemy
+class Mirror{
+    +changeDirection()
+}
+
+class Goal{
+    +checkGoal()
+}
+
 GameController --> Maze
-Player --> ScoreManager
+GameController --> LightBeam
+Maze --> Mirror
+Maze --> Goal
